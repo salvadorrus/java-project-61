@@ -2,7 +2,6 @@ package hexlet.code.Games;
 
 import hexlet.code.Engine;
 import java.util.Random;
-import static java.lang.Integer.parseInt;
 
 public class Calc {
 
@@ -22,7 +21,7 @@ public class Calc {
         int sign = random.nextInt(3);
         var calculation = randomNumberOne + " " + operator[sign] + " " + randomNumberTwo;
         var correctAnswer = calculationGame(calculation);
-        return new String[]{String.valueOf(calculation), correctAnswer};
+        return new String[]{calculation, correctAnswer};
     }
 
     private static String calculationGame(String calculation) {
@@ -33,13 +32,13 @@ public class Calc {
         int result;
         switch (signTask) {
             case "+":
-                result = parseInt(numberOne) + parseInt(numberTwo);
+                result = Integer.parseInt(numberOne) + Integer.parseInt(numberTwo);
                 break;
             case "-":
-                result = parseInt(numberOne) - parseInt(numberTwo);
+                result = Integer.parseInt(numberOne) - Integer.parseInt(numberTwo);
                 break;
             case "*":
-                result = parseInt(numberOne) * parseInt(numberTwo);
+                result = Integer.parseInt(numberOne) * Integer.parseInt(numberTwo);
                 break;
             default:
                 throw new RuntimeException("unknown operation");

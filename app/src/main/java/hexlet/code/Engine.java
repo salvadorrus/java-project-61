@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Engine {
 
     public static String scannName;
-    public static final int ROUNDS_COUNT = 3;
 
     static void greeting() {
 
@@ -15,7 +14,6 @@ public class Engine {
         Scanner inputName = new Scanner(System.in);
         scannName = inputName.nextLine();
         System.out.println("Hello, " + scannName + "!");
-
     }
 
     public static void run(String[][] questions, String rules) {
