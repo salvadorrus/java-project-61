@@ -27,7 +27,7 @@ public class Engine {
                 System.out.println("Correct!");
             } else {
                 System.out.println("'" + userAnswer + "' is wrong answer ;(. Correct answer"
-                        + "was '" + question[1] + "'. Let's try again, " + scannName + "!");
+                        + " was '" + question[1] + "'. Let's try again, " + scannName + "!");
                 return;
             }
         }

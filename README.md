@@ -5,14 +5,19 @@
 
 Project 1, Игры разума.
 
-Проект состоит из 2 игр:
+Проект состоит из 5 игр:
 
-1. Проверка на четность (Even).
-2. Калькулятор (Calc).
+1. (Even).        Проверка на четность.
+2. (Calc).        Калькулятор.
+3. (GCD).         Нахождение наибольшего общего делителя.
+4. (Progression). Определение пропущенного числа в арифметической прогрессии.
+5. (Prime).       Определение простоты числа.
+
+Каждая игра состоит из трёх раундов
 
 Demo 1. Even.
 
-https://asciinema.org/a/Fbr6oKI8xQOwIOZwt0ANDufPF
+<script src="https://asciinema.org/a/iU6sE4MElq4kWXZSb4Z7L7KU3.js" id="asciicast-iU6sE4MElq4kWXZSb4Z7L7KU3" async="true"></script>
 
 Demo 2. Calc.
 
