@@ -18,11 +18,11 @@ public class Gcd {
         int randomNumberOne = random.nextInt(100);
         int randomNumberTwo = random.nextInt(100);
         var calculation = randomNumberOne + " " + randomNumberTwo;
-        var correctAnswer = calculateGame(calculation);
+        var correctAnswer = calculationGame(calculation);
         return new String[]{calculation, correctAnswer};
     }
 
-    private static String calculateGame(String calculation) {
+    private static String calculationGame(String calculation) {
         var calculationGcd = calculation.split(" ");
         var numberOne = Integer.parseInt(calculationGcd[0]);
         var numberTwo = Integer.parseInt(calculationGcd[1]);
