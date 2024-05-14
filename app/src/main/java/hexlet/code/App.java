@@ -1,9 +1,10 @@
 package hexlet.code;
 
-import hexlet.code.Games.Calc;
 import hexlet.code.Games.Even;
+import hexlet.code.Games.Calc;
 import hexlet.code.Games.Gcd;
 import hexlet.code.Games.Progression;
+import hexlet.code.Games.Prime;
 
 import java.util.Scanner;
 
@@ -33,6 +34,10 @@ public class App {
             case 5:
                 Engine.greeting();
                 Progression.runGame();
+                break;
+            case 6:
+                Engine.greeting();
+                Prime.runGame();
             default:
                 break;
         }
@@ -46,6 +51,7 @@ public class App {
         System.out.println("3 - Calc");
         System.out.println("4 - Gcd");
         System.out.println("5 - Progression");
+        System.out.println("6 - Prime");
         System.out.println("0 - Exit");
         var choice = scanner.nextInt();
         System.out.println("Your choice: " + choice);
