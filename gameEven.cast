@@ -1,7 +1,0 @@
-{"version": 2, "width": 308, "height": 18, "timestamp": 1714941833, "env": {"SHELL": "/bin/bash", "TERM": "xterm-256color"}}
-[0.019114, "o", "\u001b[?2004h\u001b]0;salvadorrus@salvadorrus-MS-7B86: ~/IdeaProjects/java-project-61\u0007\u001b[01;32msalvadorrus@salvadorrus-MS-7B86\u001b[00m:\u001b[01;34m~/IdeaProjects/java-project-61\u001b[00m$ "]
-[3.817494, "o", "\u001b[7mmake run-dist\u001b[27m\r\n\r"]
-[4.953021, "o", "\u001b[A\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[C\u001b[Cmake run-dist\r\n\r\u001b[A\r\n\u001b[?2004l\r"]
-[4.954904, "o", "make: *** Нет правила для сборки цели «run-dist».  Останов.\r\n"]
-[4.955069, "o", "\u001b[?2004h\u001b]0;salvadorrus@salvadorrus-MS-7B86: ~/IdeaProjects/java-project-61\u0007\u001b[01;32msalvadorrus@salvadorrus-MS-7B86\u001b[00m:\u001b[01;34m~/IdeaProjects/java-project-61\u001b[00m$ "]
-[22.583118, "o", "\u001b[?2004l\r\r\nexit\r\n"]
