@@ -8,14 +8,11 @@ import java.util.Random;
 public class Progression {
 
     public static void runGame() {
-        var questions = new String[3][];
-        for (var i = 0; i < 3; i++) {
-            questions[i] = generateGame();
-        }
-        Engine.run(questions, "\nWhat number is missing in the progression?");
+        Engine.run(Engine.roundCounter(generateGame()),
+                "\nWhat number is missing in the progression?");
     }
 
-    public static String[] generateGame() {
+    private static String[] generateGame() {
         Random random = new Random();
         var count = 10;
         var firstNumber = random.nextInt(9) + 1;

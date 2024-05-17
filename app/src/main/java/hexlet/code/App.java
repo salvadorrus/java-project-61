@@ -10,8 +10,7 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
-        int choiceGame;
-        choiceGame = gamesMenu();
+        int choiceGame = gamesMenu();
         switch (choiceGame) {
             case 0:
                 System.out.println("\nThanks for playing, goodbye!");
@@ -39,6 +38,7 @@ public class App {
                 Engine.greeting();
                 Prime.runGame();
             default:
+                System.out.println("Not the right choice, try again.");
                 break;
         }
     }

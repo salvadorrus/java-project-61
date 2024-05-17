@@ -7,11 +7,8 @@ import java.util.Random;
 public class Even {
 
     public static void runGame() {
-        var questions = new String[3][];
-        for (int i = 0; i < 3; i++) {
-            questions[i] = generateGame();
-        }
-        Engine.run(questions, "\nAnswer 'yes' if the number is even, otherwise answer 'no'.");
+        Engine.run(Engine.roundCounter(generateGame()),
+                "\nAnswer 'yes' if the number is even, otherwise answer 'no'.");
     }
 
     private static String[] generateGame() {
