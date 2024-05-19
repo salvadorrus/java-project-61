@@ -8,7 +8,11 @@ import java.util.Random;
 public class Progression {
 
     public static void runGame() {
-        Engine.run(Engine.roundCounter(generateGame()),
+        var questions = new String[3][];
+        for (var i = 0; i < 3; i++) {
+            questions[i] = generateGame();
+        }
+        Engine.run(questions,
                 "\nWhat number is missing in the progression?");
     }
 

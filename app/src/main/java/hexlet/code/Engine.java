@@ -33,14 +33,14 @@ public class Engine {
         }
         System.out.println("Congratulations, " + scannName + "!");
     }
-
-    public static String[][] roundCounter(String[] generateGame) {
-        var questions = new String[3][];
-        for (var i = 0; i < 3; i++) {
-            questions[i] = generateGame;
-        }
-        return questions;
-    }
+//  не получается этот метод применить, чтобы убрать повторы...
+//    public static String[][] roundCounter(String[] generateGame) {
+//        var questions = new String[3][];
+//        for (var i = 0; i < 3; i++) {
+//            questions[i] = generateGame;
+//        }
+//        return questions;
+//    }
 }
 
 

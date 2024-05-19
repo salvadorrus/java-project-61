@@ -7,7 +7,11 @@ import java.util.Random;
 public class Prime {
 
     public static void runGame() {
-        Engine.run(Engine.roundCounter(generateGame()),
+        var questions = new String[3][];
+        for (var i = 0; i < 3; i++) {
+            questions[i] = generateGame();
+        }
+        Engine.run(questions,
                 "\nAnswer 'yes' if given number is prime. Otherwise answer 'no'.");
     }
 
