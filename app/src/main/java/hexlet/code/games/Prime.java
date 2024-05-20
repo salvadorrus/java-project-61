@@ -1,8 +1,6 @@
-package hexlet.code.Games;
+package hexlet.code.games;
 
 import hexlet.code.Engine;
-
-import java.util.Random;
 
 public class Prime {
 
@@ -16,18 +14,18 @@ public class Prime {
     }
 
     private static String[] generateGame() {
-        Random random = new Random();
-        boolean isPrimeNumber = true;
-        var randomNumber = random.nextInt(100);
-        for (var i = 2; i < randomNumber / 2; i++) {
-            var result = randomNumber % i;
-            if (result == 0) {
-                isPrimeNumber = false;
-                break;
-            }
-        }
-        var correctAnswer = isPrimeNumber ? "yes" : "no";
+        var randomNumber = Utils.getRandomInt(1, 100);
+        var correctAnswer = isPrime(randomNumber) ? "yes" : "no";
         return new String[]{String.valueOf(randomNumber), correctAnswer};
     }
 
+    private static boolean isPrime(int randomNumber) {
+        for (var i = 2; i < randomNumber / 2; i++) {
+            var result = randomNumber % i;
+            if (result == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
 }

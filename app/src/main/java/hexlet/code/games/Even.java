@@ -1,8 +1,6 @@
-package hexlet.code.Games;
+package hexlet.code.games;
 
 import hexlet.code.Engine;
-
-import java.util.Random;
 
 public class Even {
 
@@ -16,7 +14,7 @@ public class Even {
     }
 
     public static String[] generateGame() {
-        var randomNumber = new Random().nextInt(100);
+        var randomNumber = Utils.getRandomInt(1, 100);
         var correctAnswer = isEven(randomNumber) ? "yes" : "no";
         return new String[]{String.valueOf(randomNumber), correctAnswer};
     }

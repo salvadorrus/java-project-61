@@ -1,8 +1,6 @@
-package hexlet.code.Games;
+package hexlet.code.games;
 
 import hexlet.code.Engine;
-
-import java.util.Random;
 
 public class Gcd {
 
@@ -16,18 +14,14 @@ public class Gcd {
     }
 
     private static String[] generateGame() {
-        Random random = new Random();
-        int randomNumberOne = random.nextInt(100);
-        int randomNumberTwo = random.nextInt(100);
+        int randomNumberOne = Utils.getRandomInt(1, 100);
+        int randomNumberTwo = Utils.getRandomInt(1, 100);
         var calculation = randomNumberOne + " " + randomNumberTwo;
-        var correctAnswer = calculationGame(calculation);
-        return new String[]{calculation, correctAnswer};
+        var correctAnswer = calculationGame(randomNumberOne, randomNumberTwo);
+        return new String[]{calculation, String.valueOf(correctAnswer)};
     }
 
-    private static String calculationGame(String calculation) {
-        var calculationGcd = calculation.split(" ");
-        var numberOne = Integer.parseInt(calculationGcd[0]);
-        var numberTwo = Integer.parseInt(calculationGcd[1]);
+    private static int calculationGame(int numberOne, int numberTwo) {
         while (numberOne != numberTwo) {
             if (numberOne > numberTwo) {
                 numberOne = numberOne - numberTwo;
@@ -35,6 +29,6 @@ public class Gcd {
                 numberTwo = numberTwo - numberOne;
             }
         }
-        return Integer.toString(numberOne);
+        return numberOne;
     }
 }

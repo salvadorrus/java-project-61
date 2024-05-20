@@ -1,9 +1,8 @@
-package hexlet.code.Games;
+package hexlet.code.games;
 
 import hexlet.code.Engine;
 
 import java.util.Arrays;
-import java.util.Random;
 
 public class Progression {
 
@@ -17,11 +16,10 @@ public class Progression {
     }
 
     private static String[] generateGame() {
-        Random random = new Random();
         var count = 10;
-        var firstNumber = random.nextInt(9) + 1;
-        var step = random.nextInt(9) + 1;
-        var hiddenIndex = random.nextInt(9);
+        var firstNumber = Utils.getRandomInt(1, 9);
+        var step = Utils.getRandomInt(1, 9);
+        var hiddenIndex = Utils.getRandomInt(1, 9);
         var progressionQuest = generateProgression(firstNumber, step, count, hiddenIndex);
         String progression = progressionQuest[0];
         String correctAnswer = progressionQuest[1];

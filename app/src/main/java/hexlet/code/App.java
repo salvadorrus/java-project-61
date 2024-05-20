@@ -1,10 +1,10 @@
 package hexlet.code;
 
-import hexlet.code.Games.Even;
-import hexlet.code.Games.Calc;
-import hexlet.code.Games.Gcd;
-import hexlet.code.Games.Progression;
-import hexlet.code.Games.Prime;
+import hexlet.code.games.Even;
+import hexlet.code.games.Calc;
+import hexlet.code.games.Gcd;
+import hexlet.code.games.Progression;
+import hexlet.code.games.Prime;
 
 import java.util.Scanner;
 
@@ -16,27 +16,23 @@ public class App {
                 System.out.println("\nThanks for playing, goodbye!");
                 break;
             case 1:
-                Engine.greeting();
+                Cli.greeting();
                 break;
             case 2:
-                Engine.greeting();
                 Even.runGame();
                 break;
             case 3:
-                Engine.greeting();
                 Calc.runGame();
                 break;
             case 4:
-                Engine.greeting();
                 Gcd.runGame();
                 break;
             case 5:
-                Engine.greeting();
                 Progression.runGame();
                 break;
             case 6:
-                Engine.greeting();
                 Prime.runGame();
+                break;
             default:
                 System.out.println("Not the right choice, try again.");
                 break;
