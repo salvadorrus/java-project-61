@@ -20,24 +20,21 @@ public class Progression {
         var firstNumber = Utils.getRandomInt(1, 9);
         var step = Utils.getRandomInt(1, 9);
         var hiddenIndex = Utils.getRandomInt(1, 9);
-        var progressionQuest = generateProgression(firstNumber, step, count, hiddenIndex);
-        String progression = progressionQuest[0];
-        String correctAnswer = progressionQuest[1];
-        return new String[]{progression, correctAnswer};
+        var progressionQuest = generateProgression(firstNumber, step, count);
+        var correctAnswer = progressionQuest[hiddenIndex];
+        progressionQuest[hiddenIndex] = "..";
+        return new String[]{Arrays.toString(progressionQuest), correctAnswer};
     }
 
-    private static String[] generateProgression(int firstNumber, int step, int count, int hiddenIndex) {
-        String hiddenNumber;
+    private static String[] generateProgression(int firstNumber, int step, int count) {
         int nextNumber;
-        var progression = new String[count];
+        String[] progression = new String[count];
         progression[0] = String.valueOf(firstNumber);
         for (var i = 1; i < count; i++) {
             nextNumber = firstNumber + step;
             progression[i] = String.valueOf(nextNumber);
             firstNumber += step;
         }
-        hiddenNumber = progression[hiddenIndex];
-        progression[hiddenIndex] = "..";
-        return new String[]{Arrays.toString(progression), hiddenNumber};
+        return progression;
     }
 }
