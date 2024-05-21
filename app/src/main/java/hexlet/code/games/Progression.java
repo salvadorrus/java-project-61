@@ -2,8 +2,6 @@ package hexlet.code.games;
 
 import hexlet.code.Engine;
 
-import java.util.Arrays;
-
 public class Progression {
 
     public static void runGame() {
@@ -23,7 +21,8 @@ public class Progression {
         var progressionQuest = generateProgression(firstNumber, step, count);
         var correctAnswer = progressionQuest[hiddenIndex];
         progressionQuest[hiddenIndex] = "..";
-        return new String[]{Arrays.toString(progressionQuest), correctAnswer};
+        String question = String.join(" ", progressionQuest);
+        return new String[]{question, correctAnswer};
     }
 
     private static String[] generateProgression(int firstNumber, int step, int count) {
