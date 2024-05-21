@@ -16,7 +16,7 @@ public class Calc {
     private static String[] generateGame() {
         int randomNumberOne = Utils.getRandomInt(1, 10);
         int randomNumberTwo = Utils.getRandomInt(1, 10);
-        int randomSign = Utils.getRandomInt(0, 3);
+        int randomSign = Utils.getRandomInt(0, 2);
         char[] operator = {'+', '-', '*'};
         char sign = operator[randomSign];
         var calculation = randomNumberOne + " " + sign + " " + randomNumberTwo;
