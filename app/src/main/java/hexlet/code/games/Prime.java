@@ -2,6 +2,7 @@ package hexlet.code.games;
 
 import hexlet.code.Engine;
 import hexlet.code.Utils;
+
 import static hexlet.code.Engine.ROUND_COUNT;
 import static hexlet.code.Engine.MIN_RANDOM_NUMBER;
 import static hexlet.code.Engine.MAX_RANDOM_NUMBER;
@@ -18,7 +19,7 @@ public class Prime {
     }
 
     private static String[] generateGame() {
-        var randomNumber = Utils.getRandomInt(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER);
+        var randomNumber = Utils.getRandomInt(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER) + 1;
         var correctAnswer = isPrime(randomNumber) ? "yes" : "no";
         return new String[]{String.valueOf(randomNumber), correctAnswer};
     }
