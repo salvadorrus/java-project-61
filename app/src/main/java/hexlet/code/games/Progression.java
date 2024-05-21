@@ -6,7 +6,6 @@ import static hexlet.code.Engine.ROUND_COUNT;
 import static hexlet.code.Engine.MIN_RANDOM_NUMBER;
 import static hexlet.code.Engine.MAX_RANDOM_NUMBER;
 import static hexlet.code.Engine.LENGTH_PROGRESSION;
-import static hexlet.code.Engine.RANDOM_HIDDEN_INDEX;
 
 public class Progression {
 
@@ -23,7 +22,7 @@ public class Progression {
         //var count = LENGTH_PROGRESSION;
         var firstNumber = Utils.getRandomInt(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER);
         var step = Utils.getRandomInt(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER);
-        var hiddenIndex = Utils.getRandomInt(MIN_RANDOM_NUMBER, RANDOM_HIDDEN_INDEX);
+        var hiddenIndex = Utils.getRandomInt(MIN_RANDOM_NUMBER, LENGTH_PROGRESSION -1);
         var progressionQuest = generateProgression(firstNumber, step);
         var correctAnswer = progressionQuest[hiddenIndex];
         progressionQuest[hiddenIndex] = "..";

@@ -9,7 +9,6 @@ public class Engine {
     public static final int MAX_RANDOM_NUMBER = 20;
     public static final int MIN_RANDOM_NUMBER = 1;
     public static final int LENGTH_PROGRESSION = 10;
-    public static final int RANDOM_HIDDEN_INDEX = 10;
 
     public static void run(String[][] questions, String rules) {
         System.out.println("\nWelcome to the Brain Games!");
