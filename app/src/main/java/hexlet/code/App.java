@@ -10,27 +10,27 @@ import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
-        int choiceGame = gamesMenu();
+        String choiceGame = gamesMenu();
         switch (choiceGame) {
-            case 0:
+            case "0":
                 System.out.println("\nThanks for playing, goodbye!");
                 break;
-            case 1:
+            case "1":
                 Cli.greeting();
                 break;
-            case 2:
+            case "2":
                 Even.runGame();
                 break;
-            case 3:
+            case "3":
                 Calc.runGame();
                 break;
-            case 4:
+            case "4":
                 Gcd.runGame();
                 break;
-            case 5:
+            case "5":
                 Progression.runGame();
                 break;
-            case 6:
+            case "6":
                 Prime.runGame();
                 break;
             default:
@@ -39,7 +39,7 @@ public class App {
         }
     }
 
-    public static int gamesMenu() {
+    public static String gamesMenu() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter the game number and press Enter.");
         System.out.println("1 - Greet");
@@ -49,7 +49,7 @@ public class App {
         System.out.println("5 - Progression");
         System.out.println("6 - Prime");
         System.out.println("0 - Exit");
-        var choice = scanner.nextInt();
+        String choice = scanner.nextLine();
         System.out.println("Your choice: " + choice);
         return choice;
     }
