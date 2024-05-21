@@ -4,6 +4,12 @@ import java.util.Scanner;
 
 public class Engine {
 
+    public static final int ROUND_COUNT = 3;
+    public static final int RANDOM_NUMBER = 100;
+    public static final int MAX_RANDOM_NUMBER = 20;
+    public static final int MIN_RANDOM_NUMBER = 1;
+    public static final int LENGTH_PROGRESSION = 10;
+
     public static void run(String[][] questions, String rules) {
         System.out.println("\nWelcome to the Brain Games!");
         System.out.print("May I have your name? ");

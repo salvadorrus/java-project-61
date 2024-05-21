@@ -1,12 +1,16 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
+import hexlet.code.Utils;
+import static hexlet.code.Engine.ROUND_COUNT;
+import static hexlet.code.Engine.MIN_RANDOM_NUMBER;
+import static hexlet.code.Engine.RANDOM_NUMBER;
 
 public class Even {
 
     public static void runGame() {
-        var questions = new String[3][];
-        for (var i = 0; i < 3; i++) {
+        var questions = new String[ROUND_COUNT][];
+        for (var i = 0; i < ROUND_COUNT; i++) {
             questions[i] = generateGame();
         }
         Engine.run(questions,
@@ -14,7 +18,7 @@ public class Even {
     }
 
     public static String[] generateGame() {
-        var randomNumber = Utils.getRandomInt(1, 100);
+        var randomNumber = Utils.getRandomInt(MIN_RANDOM_NUMBER, RANDOM_NUMBER);
         var correctAnswer = isEven(randomNumber) ? "yes" : "no";
         return new String[]{String.valueOf(randomNumber), correctAnswer};
     }

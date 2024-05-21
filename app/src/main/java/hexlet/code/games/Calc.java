@@ -1,12 +1,16 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
+import hexlet.code.Utils;
+import static hexlet.code.Engine.ROUND_COUNT;
+import static hexlet.code.Engine.MIN_RANDOM_NUMBER;
+import static hexlet.code.Engine.MAX_RANDOM_NUMBER;
 
 public class Calc {
 
     public static void runGame() {
-        var questions = new String[3][];
-        for (var i = 0; i < 3; i++) {
+        var questions = new String[ROUND_COUNT][];
+        for (var i = 0; i < ROUND_COUNT; i++) {
             questions[i] = generateGame();
         }
         Engine.run(questions,
@@ -14,8 +18,8 @@ public class Calc {
     }
 
     private static String[] generateGame() {
-        int randomNumberOne = Utils.getRandomInt(1, 10);
-        int randomNumberTwo = Utils.getRandomInt(1, 10);
+        int randomNumberOne = Utils.getRandomInt(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER);
+        int randomNumberTwo = Utils.getRandomInt(MIN_RANDOM_NUMBER, MAX_RANDOM_NUMBER);
         int randomSign = Utils.getRandomInt(0, 2);
         char[] operator = {'+', '-', '*'};
         char sign = operator[randomSign];
