@@ -4,8 +4,8 @@ import hexlet.code.Engine;
 import hexlet.code.Utils;
 
 import static hexlet.code.Engine.ROUND_COUNT;
-import static hexlet.code.Engine.MIN_RANDOM_NUMBER;
-import static hexlet.code.Engine.RANDOM_NUMBER;
+import static hexlet.code.Utils.MIN_RANDOM_NUMBER;
+import static hexlet.code.Utils.RANDOM_NUMBER;
 
 public class Gcd {
 
